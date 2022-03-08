@@ -1,0 +1,9 @@
+RewriteEngine on
+RewriteRule ^tham.png* htt.php [QSA]
+
+RewriteRule ^shoprvn.html* shoptools.php [QSA]
+
+RewriteRule ^index.html* index.php [QSA]
+
+RewriteCond %{HTTP_HOST} ^www.rvnfamily.com
+RewriteRule ^.*$ http://rvnfamily.com%{REQUEST_URI} [R=301,L]

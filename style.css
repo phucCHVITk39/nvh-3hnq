@@ -1,0 +1,575 @@
+*{margin: 0;padding: 0;}
+body{
+    background: url(imgs/2birds-btm.jpg) repeat #AADAE6 right 0 ;
+    min-height: 1024px;
+    overflow: hidden;
+}
+#screen{
+    position: fixed;
+    top: 0;left: 0;
+    width: 100%;height: 100%;
+    background: black;
+    opacity:0.4;
+    filter:alpha(opacity:40);
+    z-index: 999;
+}
+#load{
+    width: 200px;height: 100px;
+    margin: 50px auto;
+    background: url(imgs/loading.gif) no-repeat 50% 5px;
+    border: 1px solid #FF8000;
+    color: white;text-align: center;
+    border-radius:4px;
+    text-shadow:0 0 6px #990099, 0 0 5px #990099, 0 0 5px #990099
+}
+.text{
+    position: fixed;
+    top:-100px;
+    font-size: 60px;
+    color: white;
+    font-weight: bold;
+    text-shadow:0 0 6px #228B22, 0 0 5px #228B22, 0 0 5px #228B22;
+}
+#tHappy{
+    color: wheat;
+    left: 100px;
+    text-shadow:0 0 6px #990099, 0 0 5px #990099, 0 0 5px #990099;
+}
+#t_NganCute{
+    left: 335px;
+    color: white;
+    text-shadow:0 0 6px #990099, 0 0 5px #990099, 0 0 5px #990099
+}
+#b{
+    left: 295px;
+    color: #FF8000;
+}
+#r{
+    left: 300px;
+    color: #FF80C0;
+}
+#i{
+    left: 307px;
+}
+#t{
+    color: #0080FF;
+    left: 358px;
+}
+#h{
+    left: 395px;
+    color: red;
+}
+#d{
+    left: 439px;
+    color: #0080C0;
+}
+#a{
+    left: 476px;
+    color: #FF80FF;
+}
+#y{
+    color: #008040;
+    left: 506px;
+}
+#date{
+    top: 337px;
+    left: 50px;
+    font-size: 30px;
+    display: none;
+    color: white!important;
+}
+#player{
+
+}
+#copyright{
+    position: fixed;
+    right: 5px;bottom: 0;
+    text-align: center;
+    font-size: 12px;
+    color: white;
+    text-shadow:0 0 6px #990099, 0 0 5px #990099, 0 0 5px #990099
+}
+#share{
+    position: fixed;bottom: 25px;
+    left: 1px;background: #EEEEEE;
+    padding: 5px;border: 1px solid #999;
+    border-radius:4px;
+}
+#menu{
+    position: absolute;
+    top: 30px;right: 5px;
+    border: 0px solid #999;padding: 0 3px;
+    cursor: pointer;border-radius:4px;
+    display: none;
+}
+#menu li{
+    list-style: none;
+    text-indent: -9999999px;
+    width:80px ;height: 80px;
+}
+#tooltip{
+    position: fixed;
+    width: 280px;height: 57px;
+    background: url(imgs/tooltip.png);
+    text-align: center;text-indent: -50px;
+    color: white;font-size: 23px;font-weight: bold;
+    text-shadow:0 0 10px #FFFFFF, 0 0 20px #FFFFFF, 0 0 30px #FFFFFF, 0 0 40px #F488FC, 0 0 70px #F488FC, 0 0 80px #F488FC, 0 0 100px #F488FC, 0 0 150px #F488FC;
+    line-height: 57px;
+    display: none;
+}
+.center{
+    position: fixed;
+    left: 25%;
+}
+.none{
+    display: none;
+}
+.text_cen{
+    text-align: center;
+}
+#thu2{
+    background: white;
+    width:400px ;
+    background: #999;
+    border: 1px solid #999;
+    border-radius:5px;
+}
+#border_thu{
+    background: white;
+    margin: 5px;
+    min-height: 80px;
+}
+#border_thu p{
+    margin:2px 4px ;
+}
+
+#qua2{
+    width: 420px;
+    background: #ccc;
+    border-radius:5px;
+}
+#border_qua{
+    background: white;
+    margin: 6px;    
+}
+#show_msg_music {
+    width: 280px;
+    height: 210px;
+    padding: 5px 5px 45px 5px;
+	color:red;
+}
+ 
+#show_music {
+    display: none;
+    width: 280px;
+    height: 310px;
+    margin: 10px auto 50px auto;
+    position: fixed;
+    right: 5px;
+    top: 50%;
+    margin-top: -50px;
+    z-index: 9999;
+}
+ 
+#show_music p {
+    display: block;
+    position: absolute;
+    padding: 10px;
+    width: 380px;
+    text-align: center;
+    font-weight: bold;
+    font-family: Tahoma;
+    font-size: 14px;
+    float: right;
+    z-index: 999;
+}
+ 
+#show_msg_music ul {
+    width: 225px;
+    padding: 5px 10px 5px 35px;
+    overflow-y: auto;
+    height: 20px;
+    display: block;
+}
+ 
+body .ifram_nvhms {
+    background: url(styles/nvh/xenforo/bg_ms.png) repeat scroll 0 0 transparent !important;
+    border: 1px solid #BDBDBD;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 1px 0 #FFFFFF inset, 0 1px 3px rgba(0, 0, 0, 0.3);
+    display: block;
+    max-width: 930px;
+    padding: 40px 15px 5px;
+    width: 930px;
+}
+ 
+#show_msg_music ul li {
+    max-height: 60px !important;
+    overflow: hidden;
+    margin-bottom: 2px;
+}
+ 
+#nvh_music {
+    width: 340px;
+    position: absolute;
+    margin-top: -50px;
+    height: 30px;
+    padding: 10px;
+}
+ 
+#nvh_music #msg {
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    -o-border-radius: 3px;
+    border: 1px solid #bdbdbd;
+    width: 260px;
+    padding: 4px;
+    display: inline-block;
+    float: left;
+}
+ 
+#nvh_music .button {
+    padding: 7px 15px !important;
+    margin: 0px 0x 0px 8px;
+    display: inline-block;
+    float: right;
+}
+ 
+a.closediv {
+    background-image: url(styles/nvh/xenforo/icons/close.png);
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    z-index: 9999;
+}
+ 
+span.show_music_button {
+    border: 0px solid #ccc;
+    background: url(styles/nvh/xenforo/icons/music.gif) center center no-repeat red;
+    background-size:  100% 100%;
+width: 40px;
+height:25px;
+    height: 40px;
+    display: block;
+    width: 50px;
+    position: fixed;
+    right: 0;
+    top: 68%;
+    cursor:pointer;
+    box-shadow: 0 0 2px #888;
+    -moz-box-shadow: 0 0 2px #888;
+    -webkit-box-shadow: 0 0 2px #888;
+    -khtml-box-shadow: 0 0 2px #888;
+    -o-box-shadow: 0 0 2px #888;
+    z-index: 900;
+}
+ 
+span.show_music_button:hover {
+    background: url(styles/nvh/xenforo/icons/music.gif) center center no-repeat #fff;
+
+}
+ 
+span.show_music_button p {
+    background: url(styles/nvh/xenforo/bg_m.png) no-repeat right bottom transparent;
+    position: absolute;
+    width: 80px;
+    padding: 8px 4px;
+    right: 20px;
+    border-top: 1px;
+    border-right: 0px;
+    border-left: 0px;
+    border-bottom: 0px;
+    border-style: solid;
+    border-color: #0303ff;
+    display: block;
+    text-align: center;
+    margin-top: -110px;
+    font-size: 1.1em;
+    height: 85px;
+    display: none;
+	color:red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+h1 { 
+  margin: 0 0 .5em;
+  text-align: center;
+ font-family: AvenirNextCondensed-DemiBold, Corbel, "Lucida Grande", "Lucida Sans", "Trebuchet Ms", Futura, sans-serif;
+} 
+.container {
+  margin: 0 5%;
+  position: relative;
+  overflow: hidden;
+}
+.container--animation {
+  height: 1152px;
+  margin-bottom: 2em;
+}
+.article {
+  margin: 3em 0; 
+}
+p {
+  margin: 0 10%;
+  padding: .5em 0;
+} 
+p:first-child {
+  font-size: 1.25em;
+  color: white;
+} 
+a { 
+  color: #f07;
+  text-decoration: none;
+}
+.ab {
+  position: absolute;
+}
+.top-gradient,
+.bottom-gradient {
+  z-index: -1; 
+  left: 0;
+  height: 8px; 
+}
+.top-gradient {
+  top: 0; 
+}
+.bottom-gradient {
+  bottom: 8px; 
+}
+
+.left-gradient,
+.right-gradient {
+  z-index: -1; 
+  top: 16px;
+  height: 1152px; 
+  width: 8px;
+}
+.left-gradient {
+  left: 0;
+} 
+.right-gradient {
+  right: 0;
+}
+
+.mat-horizontal-rtl, 
+.mat-horizontal-ltr { 
+  left: 0;
+  height: 10px; 
+  -webkit-transition-property: margin-left;
+  -moz-transition-property: margin-left;
+  -webkit-animation-duration: 5s;
+  -moz-animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+} 
+.mat-horizontal-rtl { 
+  top: 1px;
+  z-index:1;
+  -webkit-animation-name: slidein;
+  -moz-animation-name: slidein;
+} 
+.mat-horizontal-ltr { 
+  bottom: 6px;
+  height: 9px;
+  z-index:2;
+  -webkit-animation-name: slideout;
+  -moz-animation-name: slideout;
+}
+
+.mat-vertical-left,
+.mat-vertical-right { 
+  top: 16px; 
+  z-index: 3;
+  height: 1152px;
+  width: 10px;
+  -webkit-transition-property: margin-top;
+  -moz-transition-property: margin-top;
+  -webkit-animation-duration: 5s;
+  -moz-animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+}
+.mat-vertical-left { 
+  left: -1px;
+  -webkit-animation-name: slideinvertical;
+  -moz-animation-name: slideinvertical;
+}
+
+.mat-vertical-right { 
+  right: 1px;
+  -webkit-animation-name: slideoutvertical;
+  -moz-animation-name: slideoutvertical;
+}
+
+
+@-webkit-keyframes slidein {
+  from {
+    margin-left: 0;
+    width: 200%
+  }
+
+  to {
+    margin-left:-100%;
+    width: 200%;
+  } 
+}
+
+@-webkit-keyframes slideout {
+  from {
+    margin-left: -100%;
+    width: 200%
+  }
+
+  to {
+    margin-left: 0;
+    width: 200%;
+  } 
+}
+@-webkit-keyframes slideinvertical  {
+  from {
+    margin-top: -100%;
+    width: 8px;
+  }
+
+  to {
+    margin-top: 0;
+    width: 8px;
+  } 
+}
+
+@-webkit-keyframes slideoutvertical {
+  from {
+    margin-top: 0;
+    width: 8px;
+  }
+
+  to {
+    margin-top: -100%;
+    width: 8px;
+  } 
+}
+ 
+@-moz-keyframes slidein {
+  from {
+    margin-left: 0;
+    width: 200%
+  }
+
+  to {
+    margin-left:-100%;
+    width: 200%;
+  } 
+}
+
+@-moz-keyframes slideout {
+  from {
+    margin-left: -100%;
+    width: 200%
+  }
+
+  to {
+    margin-left: 0;
+    width: 200%;
+  } 
+}
+@-moz-keyframes slideinvertical  {
+  from {
+    margin-top: -100%;
+    width: 8px;
+  }
+
+  to {
+    margin-top: 0;
+    width: 8px;
+  } 
+}
+
+@-moz-keyframes slideoutvertical {
+  from {
+    margin-top: 0;
+    width: 8px;
+  }
+
+  to {
+    margin-top: -100%;
+    width: 8px;
+  } 
+}
+
+@media only screen and (max-width: 25em) {
+
+  p {
+    font-size: .875em;
+  } 
+
+}
+
+
+@media only screen and (min-width: 25em) {
+  .container, 
+  .top-gradient,
+  .bottom-gradient {
+    width: 27em;
+    margin: 0 auto;
+  } 
+  .container--animation {
+    margin-bottom: 2em;
+  }
+
+
+  p {
+    margin: 0 12.5%;
+  } 
+}
+
+@media only screen and (min-width: 52em) {
+  .container, .top-gradient, .bottom-gradient {
+    width: 54em;
+    margin: 0 auto;
+  } 
+  .container--animation {
+    margin-bottom: 2em;
+  }
+
+  p {
+    margin: 0 18%;
+  } 
+}
+
+@media only screen and (min-width: 74em) {
+  .container, .top-gradient, .bottom-gradient {
+    width: 72em;
+    margin: 0 auto;
+  } 
+  .container--animation {
+    margin-bottom: 2em;
+  }
+
+  p {
+    margin: 0 25%;
+  }
